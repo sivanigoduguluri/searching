@@ -1,0 +1,12 @@
+m = int(input("Enter m: "))
+n = int(input("Enter n: "))
+
+if m > n:
+    m, n = n, m   # swap values
+
+product = 1
+for i in range(m, n+1):
+    if i % 2 == 0:
+        product *= i
+
+print("Product of even numbers between", m, "and", n,"=",product)
